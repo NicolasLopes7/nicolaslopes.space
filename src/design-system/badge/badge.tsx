@@ -6,7 +6,7 @@ import * as SlotPrimitive from '@radix-ui/react-slot';
 type BadgeElement = React.ElementRef<'span'>;
 type RootProps = React.ComponentPropsWithoutRef<'span'>;
 
-type Appearance = 'cyan';
+type Appearance = 'cyan' | 'yellow';
 type Size = '1';
 
 interface BadgeProps extends RootProps {
@@ -38,6 +38,8 @@ Badge.displayName = 'Badge';
 
 const getAppearance = (appearance: Appearance | undefined) => {
   switch (appearance) {
+    case 'yellow':
+      return 'bg-yellow-2 text-yellow-11 border-yellow-6'
     case 'cyan':
     case undefined:
       return 'bg-cyan-2 text-cyan-11 border-cyan-6';
