@@ -17,38 +17,22 @@ export const Footer = React.forwardRef<FooterElement, Readonly<RootProps>>(
       {...props}
     >
       <Text className="inline-flex items-center gap-2">
-        Design System Created by{" "}
+        Created by{" "}
         <Anchor
           target="_blank"
-          href="https://twitter.com/bukinoshita"
+          href="https://twitter.com/nicolaslopess__"
           appearance="white"
           className="inline-flex items-center gap-2"
         >
           <Image
             className="inline-block rounded-full border border-slate-7"
-            src="/static/bu.jpg"
+            src="/static/nicolas.jpeg"
             alt={""}
-            width="20"
-            height="20"
+            width="30"
+            height="30"
           />
-          Bu
+          Nicolas
         </Anchor>{" "}
-        and{" "}
-        <Anchor
-          target="_blank"
-          href="https://twitter.com/zenorocha"
-          appearance="white"
-          className="inline-flex items-center gap-2"
-        >
-          <Image
-            className="inline-block rounded-full border border-slate-7"
-            src="/static/zeno.jpg"
-            alt={""}
-            width="20"
-            height="20"
-          />
-          Zeno
-        </Anchor>
       </Text>
     </footer>
   )
