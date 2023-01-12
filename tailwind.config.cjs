@@ -1,6 +1,7 @@
-import colors from "@radix-ui/colors";
-import { fontFamily } from "tailwindcss/defaultTheme"
-import plugin from "tailwindcss/plugin"
+/* eslint-disable @typescript-eslint/no-var-requires */
+const colors = require("@radix-ui/colors");
+const { fontFamily } = require("tailwindcss/defaultTheme");
+const plugin = require("tailwindcss/plugin");
 
 const iOsHeight = plugin(function ({ addUtilities }) {
   const supportsTouchRule = "@supports (-webkit-touch-callout: none)";
@@ -49,6 +50,20 @@ module.exports = {
           10: colors.cyanDarkA.cyanA10,
           11: colors.cyanDarkA.cyanA11,
           12: colors.cyanDarkA.cyanA12,
+        },
+        yellow: {
+          1: colors.yellowDarkA.yellowA1,
+          2: colors.yellowDarkA.yellowA2,
+          3: colors.yellowDarkA.yellowA3,
+          4: colors.yellowDarkA.yellowA4,
+          5: colors.yellowDarkA.yellowA5,
+          6: colors.yellowDarkA.yellowA6,
+          7: colors.yellowDarkA.yellowA7,
+          8: colors.yellowDarkA.yellowA8,
+          9: colors.yellowDarkA.yellowA9,
+          10: colors.yellowDarkA.yellowA10,
+          11: colors.yellowDarkA.yellowA11,
+          12: colors.yellowDarkA.yellowA12,
         },
         slate: {
           1: colors.slateDarkA.slateA1,
