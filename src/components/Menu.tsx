@@ -18,7 +18,7 @@ export const Menu = React.forwardRef<MenuElement, Readonly<MenuProps>>(
       {...props}
     >
       <ul className="flex gap-2">
-        <MenuItem className="w-full px-2" href="/docs">
+        <MenuItem className="w-full px-2" href="/articles">
           Articles
         </MenuItem>
         <MenuItem className="w-full px-2" href="/feed">
