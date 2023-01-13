@@ -17,7 +17,6 @@ export const Footer = React.forwardRef<FooterElement, Readonly<RootProps>>(
       {...props}
     >
       <Text className="inline-flex items-center gap-2">
-        Created by{" "}
         <Anchor
           target="_blank"
           href="https://twitter.com/nicolaslopess__"
