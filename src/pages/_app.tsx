@@ -6,7 +6,7 @@ import { Inter } from "@next/font/google";
 import { api } from "../utils/api";
 
 import "../styles/globals.css";
-// import Head from "next/head";
+import Head from "next/head";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -21,7 +21,16 @@ const MyApp: AppType<{ session: Session | null }> = ({
   return (
     <SessionProvider session={session}>
       <main className={`${inter.variable} font-sans`}>
-        {/* <Head></Head> */}
+        <Head>
+        <meta
+          name="twitter:image"
+          content="https://nicolaslopes.space/static/og.png"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="og:image" content="static/og.png" />
+        <meta property="og:url" content="https://nicolaslopes.space" />
+        <meta property="og:type" content="website" />
+        </Head>
         <Component {...pageProps} />
       </main>
     </SessionProvider>
