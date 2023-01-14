@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  space-db:
+    image: postgres:14
+    environment:
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_DB: ${DB_NAME}
+    expose:
+      - 5432
+    ports:
+      - '5432:5432'

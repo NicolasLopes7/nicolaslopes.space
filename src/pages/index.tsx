@@ -21,7 +21,7 @@ export default function Web() {
         <div className="relative mx-auto flex max-w-3xl flex-col justify-center">
           <div className="max-w-[725px] text-center">
             <Heading
-              className="before:content-['My 🪟 to the web'] relative mb-8 !text-white/80 before:absolute before:left-0 before:top-0 before:w-full before:animate-[shine_2s_ease-in-out] before:bg-shine before:bg-[length:200%] before:bg-clip-text before:text-transparent "
+              className="before:bg-shine relative mb-8 !text-white/80 before:absolute before:left-0 before:top-0 before:w-full before:animate-[shine_2s_ease-in-out] before:bg-[length:200%] before:bg-clip-text before:text-transparent before:content-['My_🪟_to_the_web'] "
               size="10"
             >
               My 🪟 to the web
