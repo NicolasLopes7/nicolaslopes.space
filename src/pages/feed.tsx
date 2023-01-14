@@ -1,4 +1,4 @@
-import { Heading } from "../design-system";
+import { Heading, Text } from "../design-system";
 import Head from "next/head";
 import Image from "next/image";
 
@@ -22,12 +22,17 @@ export default function Web() {
         <div className="relative mx-auto flex max-w-3xl flex-col">
           <div className="max-w-[725px] text-center">
             <Heading
-              className="before:bg-shine relative mb-8 !text-white/80 before:absolute before:left-0 before:top-0 before:w-full before:animate-[shine_2s_ease-in-out] before:bg-[length:200%] before:bg-clip-text before:text-transparent before:content-['Tweets_🐦'] "
+              className="relative mb-8 !text-white/80 before:absolute before:left-0 before:top-0 before:w-full before:animate-[shine_2s_ease-in-out] before:bg-shine before:bg-[length:200%] before:bg-clip-text before:text-transparent before:content-['Feed_🐦✍️📽️'] "
               size="10"
             >
-              Tweets 🐦
+              Feed 🐦✍️📽️
             </Heading>
-            <div className="flex flex-col gap-4">
+            <div className="sm:px-20">
+              <Text size="5">
+                Here you can find the tweets, articles and videos i{`'`}m watching 👁️
+              </Text>
+            </div>
+            <div className="flex flex-col gap-4 mt-10">
               <Tweet
                 text={`Have you ever need to create graphQL nodes that only fetches an rest endpoint or whatever behavior that can done on the same way?
 
@@ -41,9 +46,7 @@ cc
               <Tweet
                 text={`it's crazy that this is the guy who decides if restaurants are good`}
               />
-              <Tweet
-                text={`app recommendation: strong`}
-              />
+              <Tweet text={`app recommendation: strong`} />
             </div>
           </div>
         </div>
