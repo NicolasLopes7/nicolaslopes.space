@@ -11,13 +11,12 @@ export const Footer = React.forwardRef<FooterElement, Readonly<RootProps>>(
     <footer
       ref={forwardedRef}
       className={classnames(
-        "flex h-[80px] items-center justify-center text-center",
+        "flex h-[80px] items-center justify-center text-center pb-3",
         className
       )}
       {...props}
     >
       <Text className="inline-flex items-center gap-2">
-        Created by{" "}
         <Anchor
           target="_blank"
           href="https://twitter.com/nicolaslopess__"

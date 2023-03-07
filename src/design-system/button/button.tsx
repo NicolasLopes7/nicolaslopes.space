@@ -1,13 +1,13 @@
-import * as React from 'react';
-import classnames from 'classnames';
-import { unreachable } from '../utils';
-import * as SlotPrimitive from '@radix-ui/react-slot';
+import * as React from "react";
+import classnames from "classnames";
+import { unreachable } from "../utils";
+import * as SlotPrimitive from "@radix-ui/react-slot";
 
-type ButtonElement = React.ElementRef<'button'>;
-type RootProps = React.ComponentPropsWithoutRef<'button'>;
+type ButtonElement = React.ElementRef<"button">;
+type RootProps = React.ComponentPropsWithoutRef<"button">;
 
-type Appearance = 'white' | 'gradient';
-type Size = '1' | '2' | '3' | '4';
+type Appearance = "white" | "gradient" | "black";
+type Size = "1" | "2" | "3" | "4";
 
 interface ButtonProps extends RootProps {
   asChild?: boolean;
@@ -19,19 +19,19 @@ export const Button = React.forwardRef<ButtonElement, Readonly<ButtonProps>>(
   (
     {
       asChild,
-      appearance = 'white',
+      appearance = "white",
       className,
       children,
-      size = '2',
+      size = "2",
       ...props
     },
-    forwardedRef,
+    forwardedRef
   ) => {
     const classNames = classnames(
       getSize(size),
       getAppearance(appearance),
-      'inline-flex items-center justify-center border font-medium',
-      className,
+      "inline-flex items-center justify-center border font-medium",
+      className
     );
 
     return asChild ? (
@@ -43,25 +43,32 @@ export const Button = React.forwardRef<ButtonElement, Readonly<ButtonProps>>(
         {children}
       </button>
     );
-  },
+  }
 );
 
-Button.displayName = 'Button';
+Button.displayName = "Button";
 
 const getAppearance = (appearance: Appearance | undefined) => {
   switch (appearance) {
     case undefined:
-    case 'white':
+    case "white":
       return [
-        'bg-white text-black',
-        'hover:bg-white/90',
-        'focus:ring-2 focus:ring-white/20 focus:outline-none focus:bg-white/90',
+        "bg-white text-black",
+        "hover:bg-white/90",
+        "focus:ring-2 focus:ring-white/20 focus:outline-none focus:bg-white/90",
       ];
-    case 'gradient':
+    case "gradient":
       return [
-        'bg-gradient backdrop-blur-[20px] border-[#34343A]',
-        'hover:bg-gradientHover',
-        'focus:ring-2 focus:ring-white/20 focus:outline-none focus:bg-gradientHover',
+        "bg-gradient backdrop-blur-[20px] border-[#34343A]",
+        "hover:bg-gradientHover",
+        "focus:ring-2 focus:ring-white/20 focus:outline-none focus:bg-gradientHover",
+      ];
+
+    case "black":
+      return [
+        "bg-black text-white",
+        "hover:bg-white/5",
+        "focus:ring-2 focus:ring-white/20 focus:outline-none focus:bg-black/90",
       ];
     default:
       unreachable(appearance);
@@ -70,15 +77,15 @@ const getAppearance = (appearance: Appearance | undefined) => {
 
 const getSize = (size: Size | undefined) => {
   switch (size) {
-    case '1':
-      return '';
+    case "1":
+      return "";
     case undefined:
-    case '2':
-      return 'text-[14px] h-8 px-3 rounded-md gap-2';
-    case '3':
-      return 'text-[14px] h-10 px-4 rounded-md gap-2';
-    case '4':
-      return 'text-base h-11 px-4 rounded-md gap-2';
+    case "2":
+      return "text-[14px] h-8 px-3 rounded-md gap-2";
+    case "3":
+      return "text-[14px] h-10 px-4 rounded-md gap-2";
+    case "4":
+      return "text-base h-11 px-4 rounded-md gap-2";
     default:
       unreachable(size);
   }

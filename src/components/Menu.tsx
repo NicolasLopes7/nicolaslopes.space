@@ -18,12 +18,12 @@ export const Menu = React.forwardRef<MenuElement, Readonly<MenuProps>>(
       {...props}
     >
       <ul className="flex gap-2">
-        <MenuItem className="w-full px-2" href="/docs">
-          Blog
+        <MenuItem className="w-full px-2" href="/where-am-i">
+        📍 Where am I 
         </MenuItem>
-        <MenuItem className="w-full px-2" href="/examples">
+        {/* <MenuItem className="w-full px-2" href="/examples">
           Tweets
-        </MenuItem>
+        </MenuItem> */}
       </ul>
       <span
         aria-hidden="true"
