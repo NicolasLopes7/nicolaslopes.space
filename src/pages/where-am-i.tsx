@@ -9,28 +9,39 @@ import { Place } from "../components/Place";
 
 const places: PlaceProps[] = [
   {
-    image:
-      "https://nomadlist.com/cdn-cgi/image/format=auto,width=1920,quality=100/https://nomadlist.com/imageProxy.php?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1590093804249-491680485e5d%3Fcrop%3Dentropy%26cs%3Dtinysrgb%26fit%3Dmax%26fm%3Djpg%26ixid%3DMnwzMTM1N3wwfDF8c2VhcmNofDMwfHxGbG9yaWFub3BvbGlzJTIwJTIwQnJhemlsfGVufDF8MHx8fDE2NzIyNzI4OTU%26ixlib%3Drb-4.0.3%26q%3D50%26w%3D700&hash=f3a9860042caca70003bb6620d22b125",
-    name: "Floripa, Brazil",
-    period: "17th March - 27th March",
+    image: "https://ondeficarnaviagem.com/wp-content/uploads/2022/02/onde-ficar-em-maragogi-alagoas-dicas-hoteis-pousadas-10.jpg",
+    name: "Maragogi",
+    period: "07 - 14, may. 2023",
   },
   {
-    image:
-      "https://nomadlist.com/cdn-cgi/image/format=auto,width=1920,quality=100/https://nomadlist.com/imageProxy.php?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1601997476064-f44852383201%3Fcrop%3Dentropy%26cs%3Dtinysrgb%26fit%3Dmax%26fm%3Djpg%26ixid%3DMnwzMTM1N3wwfDF8c2VhcmNofDF8fEN1cml0aWJhfGVufDB8MHx8fDE2NDEzNDE2Mjk%26ixlib%3Drb-1.2.1%26q%3D50%26w%3D700&hash=d85e075b131b8a05d73c9cecfd2521a0",
-    name: "Curitiba, Brazil",
-    period: "27th March - 10th April",
+    image: "https://a.cdn-hotels.com/gdcs/production170/d1541/37153966-167c-4334-9b81-823d6ffce6dd.jpg",
+    name: "Crete",
+    period: "02 - 11, jun. 2023",
   },
   {
-    image:
-      "https://nomadlist.com/cdn-cgi/image/format=auto,width=1920,quality=100/https://nomadlist.com/imageProxy.php?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1566830790860-f9cad9d4cfbd%3Fcrop%3Dentropy%26cs%3Dtinysrgb%26fit%3Dmax%26fm%3Djpg%26ixid%3DMnwzMTM1N3wwfDF8c2VhcmNofDR8fEJlbG8lMjBIb3Jpem9udGUlMjAlMjBCcmF6aWx8ZW58MXwwfHx8MTY3ODE0ODEzMw%26ixlib%3Drb-4.0.3%26q%3D50%26w%3D700&hash=77ad47cec7c5feb71d45d8b8dfa838b7",
-    name: "Belo Horizonte, Brazil",
-    period: "10th April - 20th April",
+    image: "https://a.cdn-hotels.com/gdcs/production18/d1838/041ae6b1-0a88-4c22-a648-53a22dd4a006.jpg",
+    name: "Santorini",
+    period: "11 - 15, jun. 2023",
   },
   {
-    image:
-      "https://nomadlist.com/cdn-cgi/image/format=auto,width=1920,quality=100/https://nomadlist.com/imageProxy.php?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1561722797-8b4dffabb19f%3Fcrop%3Dentropy%26cs%3Dtinysrgb%26fit%3Dmax%26fm%3Djpg%26ixid%3DMnwzMTM1N3wwfDF8c2VhcmNofDEzfHxTJUMzJUEzbyUyMFBhdWxvfGVufDF8MHx8fDE2NDI2MzczOTU%26ixlib%3Drb-1.2.1%26q%3D50%26w%3D700&hash=cfe9dcbc5c86d5809b2c6215c32535a5",
-    name: "São Paulo, Brazil",
-    period: "20th April - 27th April",
+    image: "https://lp-cms-production.imgix.net/2021-08/shutterstockRF_1541944991.jpg",
+    name: "Mykonos",
+    period: "15 - 19, jun. 2023",
+  },
+  {
+    image: "https://cdn.britannica.com/66/102266-050-FBDEFCA1/acropolis-city-state-Greece-Athens.jpg",
+    name: "Athens",
+    period: "19 - 23, jun. 2023",
+  },
+  {
+    image: "https://www.melhoresdestinos.com.br/wp-content/uploads/2019/02/passagens-aereas-brasilia-capa2019-01.jpg",
+    name: "Brasília",
+    period: "21 - 23, jul. 2023",
+  },
+  {
+    image: "https://a.cdn-hotels.com/gdcs/production164/d1916/76adf5d6-a867-49c6-872d-524b3ca73da5.jpg",
+    name: "João Pessoa",
+    period: "02 - 22, ago. 2023",
   },
 ];
 
