@@ -9,11 +9,6 @@ import { Place } from "../components/Place";
 
 const places: PlaceProps[] = [
   {
-    image: "https://ondeficarnaviagem.com/wp-content/uploads/2022/02/onde-ficar-em-maragogi-alagoas-dicas-hoteis-pousadas-10.jpg",
-    name: "Maragogi",
-    period: "07 - 14, may. 2023",
-  },
-  {
     image: "https://a.cdn-hotels.com/gdcs/production170/d1541/37153966-167c-4334-9b81-823d6ffce6dd.jpg",
     name: "Crete",
     period: "02 - 11, jun. 2023",
