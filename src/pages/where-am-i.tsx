@@ -9,36 +9,24 @@ import { Place } from "../components/Place";
 
 const places: PlaceProps[] = [
   {
-    image: "https://a.cdn-hotels.com/gdcs/production170/d1541/37153966-167c-4334-9b81-823d6ffce6dd.jpg",
-    name: "Crete",
-    period: "02 - 11, jun. 2023",
+    image:
+      "https://images.unsplash.com/photo-1629984557780-4dde2292e245?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80",
+    name: "São Paulo",
+    period: "08 - 13, sep. 2023",
   },
   {
-    image: "https://a.cdn-hotels.com/gdcs/production18/d1838/041ae6b1-0a88-4c22-a648-53a22dd4a006.jpg",
-    name: "Santorini",
-    period: "11 - 15, jun. 2023",
+    image:
+      "https://images.unsplash.com/photo-1612294037637-ec328d0e075e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80",
+    name: "Buenos Aires",
+    period: "13 - 21, sep. 2023",
   },
   {
-    image: "https://lp-cms-production.imgix.net/2021-08/shutterstockRF_1541944991.jpg",
-    name: "Mykonos",
-    period: "15 - 19, jun. 2023",
+    image:
+      "https://images.unsplash.com/photo-1505322266409-1c77f8b33a8a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80",
+    name: "Bariloche",
+    period: "21 - 26, sep. 2023",
   },
-  {
-    image: "https://cdn.britannica.com/66/102266-050-FBDEFCA1/acropolis-city-state-Greece-Athens.jpg",
-    name: "Athens",
-    period: "19 - 23, jun. 2023",
-  },
-  {
-    image: "https://www.melhoresdestinos.com.br/wp-content/uploads/2019/02/passagens-aereas-brasilia-capa2019-01.jpg",
-    name: "Brasília",
-    period: "21 - 23, jul. 2023",
-  },
-  {
-    image: "https://a.cdn-hotels.com/gdcs/production164/d1916/76adf5d6-a867-49c6-872d-524b3ca73da5.jpg",
-    name: "João Pessoa",
-    period: "02 - 22, ago. 2023",
-  },
-];
+].reverse();
 
 export default function Web() {
   const title = "Here I am";
